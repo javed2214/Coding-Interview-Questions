@@ -6,7 +6,6 @@
 // Jeff 70 90
 // John 58 82
 
-
 #include<bits/stdc++.h>
 using namespace std;
 
