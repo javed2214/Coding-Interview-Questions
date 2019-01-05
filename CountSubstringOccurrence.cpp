@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 
-	string text="acbd";
+	string text="acbdcb";
 	string pat="cb";
 	int n1=text.length();
 	int n2=pat.length();
@@ -15,7 +15,7 @@ int main(){
 	
 	for(int i=0;i<=x;i++){
 		found=true;
-		for(int j=i;j<=i+n2-1;j++){
+		for(int j=i;j<i+n2;j++){
 			if(pat[j-i]!=text[j])
 				found=false;
 		}
