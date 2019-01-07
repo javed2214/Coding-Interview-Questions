@@ -1,0 +1,25 @@
+// Program to Reverse Characters of Each Word of a String
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	
+	string str;
+	stack <char> S;
+	int j,k;
+	getline(cin,str);
+	for(int i=0;i<str.length();i++){
+		if(str[i]==' '){
+			j=i-1;
+			while(j>=0 and str[j]!=' '){
+				cout<<str[j--];
+			}
+			cout<<" ";
+		}
+	}
+	for(int i=str.length()-1;str[i]!=' ';i--)
+		cout<<str[i];
+
+	return 0;
+}
