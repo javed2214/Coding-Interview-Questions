@@ -13,7 +13,7 @@ int main(){
 	for(int i=0;i<n;i++)
 		Map[a[i]]=true;
 	
-	for(int i=0;i<=n/2;i++){
+	for(int i=0;i<n/2;i++){		// If n is Even then i<n/2 else i<=n/2
 		if(Map[sum-a[i]]==true){
 			cout<<a[i]<<" "<<sum-a[i]<<"\n";
 		}
