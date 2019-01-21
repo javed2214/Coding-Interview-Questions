@@ -1,5 +1,6 @@
 // Program to Print All Possible Pairs of Array Elements which are Equal to Given Sum
 
+#include<bits/stdc++.h>
 using namespace std;
 
 int main(){
