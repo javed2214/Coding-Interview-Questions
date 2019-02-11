@@ -20,7 +20,7 @@ void anagramPairs(vector<string> &vec){
 
 int main(){
 
-	vector<string> vec={"geeks","quiz","hello","ziuq","eeksg","ellho"};
+	vector<string> vec={"geeks","quiz","hello","cat","ziuq","eeksg","ellho","tac"};
 	anagramPairs(vec);
 
 	return 0;
