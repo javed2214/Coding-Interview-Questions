@@ -1,4 +1,4 @@
-// Find the Largest number with given number of digits and sum of digits
+// Find the Largest number with given number of digits and sum of Digits
 
 #include<bits/stdc++.h>
 using namespace std;
