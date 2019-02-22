@@ -12,12 +12,11 @@ int main(){
 	l=0;r=n-1;
 
 	while(l<r){
-		while(a[l]==0 and l<r)
-			l++;
-		while(a[r]==1 and l<r)
-			r--;
-		if(l<r)
+		if(a[l]==1){
 			swap(a[l],a[r]);
+			r--;
+		}
+		else l++;
 	}
 
 	for(auto it:a) cout<<it<<" ";
