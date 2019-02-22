@@ -1,6 +1,7 @@
 // Program to Check If Given Point Lies Inside Rectangle or Not
 // Area of Rectangle = Sum of Area of two Triangles
 // Area of Triangle = [x1(y2 – y3) + x2(y3 – y1) + x3(y1-y2)]/2
+// https://www.geeksforgeeks.org/check-whether-given-point-lies-inside-rectangle-not/
 
 #include<bits/stdc++.h>
 using namespace std;
