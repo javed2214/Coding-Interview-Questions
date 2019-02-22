@@ -1,4 +1,4 @@
-// You've given Multiple Coordinates, Find out That Coordinate which have Minimum Distance from Origin
+// You've given Multiple Coordinates, Find out That Coordinate which have Maximum Distance from Origin
 
 #include<bits/stdc++.h>
 using namespace std;
