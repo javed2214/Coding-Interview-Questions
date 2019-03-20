@@ -5,16 +5,15 @@ using namespace std;
 
 int main(){
 
-	string str="12345238";
-	int len,j;
-	len=j=str.length();
+	int main(){
 
-	int num=0;
+	string str="12345";
+	int c=0;
+		
+	for(int i=0;i<str.length();i++)
+		c=c*10+(str[i]-'0');
 
-	for(int i=0;i<len;i++)
-		num+=(str[--j]-'0')*pow(10,i);
-
-	cout<<num;
-
+	cout<<c;
+	
 	return 0;
 }
