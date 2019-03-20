@@ -1,4 +1,4 @@
-// Find First Non Repetitive Character of a String
+// Find First Non Repetitive Character in a String
 // Using HashMap 
 
 #include<bits/stdc++.h>
