@@ -1,5 +1,5 @@
-// Program to Find Name Initials
-// Javed Ansari => J Ansari
+// Program to Print Name Initials
+// Javed Ansari Khan => J A Khan
 
 #include<bits/stdc++.h>
 using namespace std;
