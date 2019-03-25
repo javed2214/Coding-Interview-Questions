@@ -20,4 +20,6 @@ int main(){
 		}
 	}
 	cout<<str.substr(0,p);
+	
+	return 0;
 }
