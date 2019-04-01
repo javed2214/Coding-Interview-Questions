@@ -1,33 +1,34 @@
-// Program to Add 1 to an Array
+// Adding One to An Array
+// [9 9 9] + 1 => [1 0 0 0]
 
 #include<bits/stdc++.h>
 using namespace std;
 
-std::vector<int> addOne(std::vector<int> &v){
+void getSum(int *a, int n){
 
-	int sum=0,car=0;
-	std::vector<int> x;
-	int r=v.size()-1;
-	sum+=v[r]+1;
-	while(r>=0){
-		if(sum>=10) x.push_back(sum%10);
-		else x.push_back(sum);
-		car=sum/10;
-		sum=car;
-		r--;
-		sum+=v[r];
-	}	
-	if(car) x.push_back(car);
+	vector<int> v;
+	int carry=1,x,sum;
 
-	return x;
+	for(int i=n-1;i>=0;i--){
+		sum=a[i]+carry;
+		if(sum==10) x=0, carry=1;
+		else x=sum, carry=0;
+		v.push_back(x);
+	}
+	if(carry) v.push_back(carry);
+
+	for(int i=v.size()-1;i>=0;i--)
+		cout<<v[i];
+
+	return;
 }
 
 int main(){
 
-	std::vector<int> v={9,9,9,9};
-	v=addOne(v);
-	reverse(v.begin(),v.end());
-	for(auto it:v) cout<<it;
+	int a[]={9,9,9};
+	int n=sizeof(a)/sizeof(int);
 
-	return 0;
+	getSum(a,n);
+
+	return 0;	
 }
