@@ -28,6 +28,7 @@ int main(){
 	h3=h3+m3/60;
 	m3=m3%60;
 	d=h3/24;
+	h3=h3%24;
 
 	cout<<d<<" Days  "<<h3<<" Hrs  "<<m3<<" Mins  "<<s3<<" Secs";
 
