@@ -12,13 +12,6 @@ using namespace std;
 #define ll long long int
 #define SIZE 100000001
 
-int stringToInt(string s){
-	int sum=0;
-	for(int i=0;i<s.length();i++)
-		sum=sum*10+(s[i]-'0');
-	return sum;
-}
-
 int main(){
 
 	int h1,h2,h3,m1,m2,m3,s1,s2,s3,d;
