@@ -14,7 +14,7 @@ using namespace std;
 
 int main(){
 
-	int a[]={1,0,0,1,0,0,1,1,1};
+	int a[]={1,0,0,1,0,0,1,1,1};	// Ans: 4
 	int n=sizeof(a)/sizeof(int);
 
 	int sum=0,mx=INT_MIN;
