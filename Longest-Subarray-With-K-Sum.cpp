@@ -13,7 +13,8 @@ int main(){
 	unordered_map <int,int> Map;
 
 	for(int i=0;i<n;i++){
-		sum+=a[i];
+		sum+=a[i];	
+		if(sum==k) mx=i+1;
 		if(Map.find(sum)==Map.end()) Map[sum]=i;
 		if(Map.find(sum-k)!=Map.end()) mx=max(mx,i-Map[sum-k]);
 	}
