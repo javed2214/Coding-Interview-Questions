@@ -1,4 +1,4 @@
-// Reverse Words of a String Inplace
+// Reverse Words Inplace
 // Asked in Google
 
 #include<bits/stdc++.h>
@@ -14,7 +14,7 @@ int main(){
 	int n=str.length();
 
 	getReverse(str,0,n-1);
-	int start=0, end=0;
+	int start=0;
 
 	for(int i=0;i<n;i++){
 		if(str[i]==' ') getReverse(str, start, i-1), start=i+1;
