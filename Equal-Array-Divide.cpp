@@ -1,5 +1,6 @@
 // Program to Check if Array Can be Divied into Two Equal Subarrays using Pre-Sum
 // [1 10 8 1] => [10] and [1 8 1]
+// Time Complexity: O(nLog(n))
 
 #include<bits/stdc++.h>
 using namespace std;
