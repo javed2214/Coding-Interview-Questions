@@ -1,4 +1,4 @@
-// Quickly find Left Rotation of an Array
+// Quickly Print Left Rotation of an Array
 // [1 3 5 7 9] k=1 => [3 5 7 9 1]
 
 #include<bits/stdc++.h>
@@ -11,8 +11,10 @@ int main(){
 
 	int k; cin>>k;
 
-	for(int i=k;i<k+n;i++)
-		cout<<a[i%n]<<" ";
+	int mod = k % n;
+
+	for(int i=0;i<n;i++)
+		cout<<a[(mod + i)%n]<<" ";
 
 	return 0;
 }
