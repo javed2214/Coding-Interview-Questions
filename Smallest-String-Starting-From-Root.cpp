@@ -1,5 +1,6 @@
 // Smallest String Starting from Root
 // https://leetcode.com/problems/smallest-string-starting-from-leaf/
+// Brute Force Approach
 
 
 class Solution {
