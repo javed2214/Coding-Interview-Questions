@@ -39,14 +39,29 @@ void method2(int *a, int n){
 }
 
 
+void method3(int *a, int n){
+
+	int j = 0;
+
+	for(int i=0;i<n;i++){
+		if(a[i] == 0){
+			swap(a[i], a[j]);
+			j++;
+		}
+	}
+
+	for(int i=0;i<n;i++) cout<<a[i]<<" ";
+}
+
+
 int main(){
 
 	int a[] = {1,0,1,0,0,1,1,1,0,1,0,0};
 	int n = sizeof(a)/sizeof(int);
 
 	method1(a,n);
-
 	method2(a,n);
+	method3(a,n);
 
 	return 0;
 }
