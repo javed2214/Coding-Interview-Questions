@@ -1,6 +1,7 @@
 // Program to Remove Adjacent Duplicates from String (In-Place)
 // https://www.techiedelight.com/in-place-remove-all-adjacent-duplicates-from-string/
 // https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+// "ABBCD" -> "ACD"
 
 #include<bits/stdc++.h>
 using namespace std;
