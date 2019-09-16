@@ -1,10 +1,11 @@
-// Program to Count Strictly Increasing SubArrays
+// Program to Count Number of Strictly Increasing SubArrays
 // https://www.geeksforgeeks.org/count-strictly-increasing-subarrays/
 
 #include<bits/stdc++.h>
 using namespace std;
 
 /****************** METHOD 1 ******************/
+
 // TC: O(m) m: No of Subarrays in Output
 // SC: O(1)
 
@@ -23,6 +24,7 @@ int Method_1 (int *a, int n){
 
 
 /****************** METHOD 2 ******************/
+
 // TC: O(n) n: Length of Array
 // SC: O(1)
 
@@ -50,4 +52,6 @@ int main(){
 
 	cout << Method_1(a,n) << endl;
 	cout << Method_2(a,n) << endl;
+
+	return 0;
 }
