@@ -14,7 +14,9 @@ int main(){
 	int res = 0;
 
 	for(auto c:s){
+		
 		if(isdigit(c)) res = res * 10 + (c - '0');
+		
 		else{
 			if(res == 0) ch = c;
 			else{
