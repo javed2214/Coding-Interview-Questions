@@ -1,5 +1,5 @@
 // Rearrange Characters of String such that No Two Adjacent Characters are Same
-// 
+// https://www.geeksforgeeks.org/rearrange-characters-in-a-string-such-that-no-two-adjacent-are-same-using-hashing/
 
 #include<bits/stdc++.h>
 using namespace std;
