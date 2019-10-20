@@ -23,3 +23,22 @@ int main(){
 
 	return 0;
 }
+
+
+//  ******************************** METHOD 2 **********************************
+
+int main(){
+
+	int a[] = {2,5,4,6,8,1,9};
+	int n = sizeof(a) / sizeof(int);
+
+	int cnt = 0;
+
+	for(int i=0;i<n;i++){
+		if(a[i] & 1) swap(a[i], a[cnt++]);
+	}
+
+	for(int i=0;i<n;i++) cout << a[i] << " ";
+
+	return 0;
+}
