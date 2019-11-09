@@ -1,6 +1,12 @@
 // Form Minimum from a Given Sequence
 // https://www.geeksforgeeks.org/form-minimum-number-from-given-sequence/
 
+// "DIDI" => 21345
+// "ID" => 231
+// "I" => 12
+// "D" => 21
+// "DD" => 321
+
 // Asked in Amazon
 
 #include<bits/stdc++.h>
