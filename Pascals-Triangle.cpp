@@ -1,6 +1,5 @@
 // Program to Print Pascal's Triangle
 
-
 // LeetCode Solution
 
 class Solution {
