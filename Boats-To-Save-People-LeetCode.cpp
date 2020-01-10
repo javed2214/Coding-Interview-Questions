@@ -1,5 +1,6 @@
 // Boats to Save People
 // https://leetcode.com/problems/boats-to-save-people/
+// Two Pointer Application
 
 class Solution {
 public:
