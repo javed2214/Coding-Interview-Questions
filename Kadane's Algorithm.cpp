@@ -5,6 +5,22 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        
+        int sum = 0, mx = INT_MIN;
+        
+        for(auto it:nums){
+            sum += it;
+            mx = max(mx, sum);
+            sum = max(sum, 0);
+        }
+        return mx;
+    }
+};
+
 int main(){
 
 	int a[] = {-4,1,-3,7,-2,5,7,-9,-3};
