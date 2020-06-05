@@ -22,7 +22,7 @@ public:
             int y = v[i][1];
             
             if(x > s.top().second) s.push({x, y});      // Overlap Check
-            s.top().second = max(y, s.top().second);
+            s.top().second = max(s.top().second, y);
         }
         
         vector<vector<int>> x;
