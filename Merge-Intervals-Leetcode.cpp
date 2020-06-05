@@ -1,5 +1,9 @@
 // Merge Intervals LeetCode
 // https://leetcode.com/problems/merge-intervals/
+// https://www.youtube.com/watch?v=QlaDyZTCAbM
+
+// Time  : O(nLog(n))
+// Space : O(n)
 
 class Solution {
 public:
@@ -8,29 +12,25 @@ public:
         if(v.size() == 0) return {};
         
         sort(v.begin(), v.end());
+        stack <pair<int, int>> s;
         
-        vector<pair<int,int>> x;
-        vector<vector<int>> y;
+        s.push({v[0][0], v[0][1]});     // Pushing First Interval
         
-        for(int i=0;i<v.size();i++) x.push_back({v[i][0], v[i][1]});
-        
-        stack <pair<int,int>> S;
-        
-        for(auto it:x){
-            if(S.empty() or S.top().second < it.first) S.push(it);
-            if(S.top().second < it.second) S.top().second = it.second;
-        }
-
-        while(!S.empty()){
-            pair <int,int> P = S.top();
-            int a = P.first;
-            int b = P.second;
-            y.push_back({a,b});
-            S.pop();
+        for(int i = 1; i < v.size(); i++){
+           
+            int x = v[i][0];
+            int y = v[i][1];
+            
+            if(x > s.top().second) s.push({x, y});      // Overlap Check
+            s.top().second = max(y, s.top().second);
         }
         
-        reverse(y.begin(), y.end());
+        vector<vector<int>> x;
         
-        return y;
+        while(!s.empty()){
+            x.push_back({s.top().first, s.top().second});
+            s.pop();
+        }
+        return x;
     }
 };
